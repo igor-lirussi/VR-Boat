@@ -1,6 +1,7 @@
 # VR-Boat
 ## Description 
-A Virtual Reality game/scenario on a Boat, exploring the melting icebergs and polluted oceansn. 
+A Virtual Reality game/scenario on a Boat, exploring the melting icebergs and polluted oceans. 
+Built during VR Hackathon 20-21/08/2022.
 
 ### Topics:
 - VR Virtual-Reality 
@@ -25,7 +26,8 @@ A Virtual Reality game/scenario on a Boat, exploring the melting icebergs and po
 - Resources
 
 ## Authors
-* **Igor Lirussi** @ BOUN Boğaziçi University - CoLoRs (Cognitive Learning and Robotics) Lab
+* **Igor Lirussi** @ BOUN Boğaziçi University - BuViar Lab
+* **İpek Paksoy** @ BOUN Boğaziçi University - BuViar Lab
 
 ## Acknowledgments
 *   All the people that contributed with suggestions and tips.
