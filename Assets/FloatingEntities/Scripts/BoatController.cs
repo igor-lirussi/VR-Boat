@@ -9,14 +9,14 @@ public class BoatController : MonoBehaviour
   void Update()
   {
 
-    if (Input.GetKey(KeyCode.Q))
+    if (Input.GetKey(KeyCode.A))
       ship.RudderLeft();
     if (Input.GetKey(KeyCode.D))
       ship.RudderRight();
 
     if (forward)
     {
-      if (Input.GetKey(KeyCode.Z))
+      if (Input.GetKey(KeyCode.W))
         ship.ThrottleUp();
       else if (Input.GetKey(KeyCode.S))
       {
@@ -28,14 +28,14 @@ public class BoatController : MonoBehaviour
     {
       if (Input.GetKey(KeyCode.S))
         ship.ThrottleUp();
-      else if (Input.GetKey(KeyCode.Z))
+      else if (Input.GetKey(KeyCode.W))
       {
         ship.ThrottleDown();
         ship.Brake();
       }
     }
 
-    if (!Input.GetKey(KeyCode.Z) && !Input.GetKey(KeyCode.S))
+    if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
       ship.ThrottleDown();
 
     if (ship.engine_rpm == 0 && Input.GetKeyDown(KeyCode.S) && forward)
@@ -43,7 +43,7 @@ public class BoatController : MonoBehaviour
       forward = false;
       ship.Reverse();
     }
-    else if (ship.engine_rpm == 0 && Input.GetKeyDown(KeyCode.Z) && !forward)
+    else if (ship.engine_rpm == 0 && Input.GetKeyDown(KeyCode.W) && !forward)
     {
       forward = true;
       ship.Reverse();

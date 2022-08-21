@@ -8,7 +8,7 @@ public class PropellerBoats : MonoBehaviour
   private Rigidbody rb;
 
   public float engine_rpm { get; private set; }
-  float throttle;
+  public float throttle;
   int direction = 1;
 
   public float propellers_constant = 0.6F;

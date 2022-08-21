@@ -156,7 +156,11 @@ extern void WakeGenerator_Update_m04E673E317AF9C1A673E9AECAA7880DEF83AAD27 (void
 extern void WakeGenerator_OnDrawGizmos_mB9B280CD35C8A9589AB18EE60B7C243AE7A1FF4D (void);
 // 0x00000048 System.Void WakeGenerator::.ctor()
 extern void WakeGenerator__ctor_m2A55FEB43DF6AB008AA2A6A093729534199D5033 (void);
-static Il2CppMethodPointer s_methodPointers[72] = 
+// 0x00000049 System.Void BoatVRController::Update()
+extern void BoatVRController_Update_mFF0C8F5ADA5C51C8DD536E3EB055BFA9BEEC5769 (void);
+// 0x0000004A System.Void BoatVRController::.ctor()
+extern void BoatVRController__ctor_mB7E6905D2EC3745602AD73902A605C9573FD3664 (void);
+static Il2CppMethodPointer s_methodPointers[74] = 
 {
 	BoatController_Update_m0021C51B5157FAE85F0048B0DF541A03E95C99FC,
 	BoatController__ctor_mBA78C64F2F311CF0258C520D2EF2C8DF0851079F,
@@ -230,8 +234,10 @@ static Il2CppMethodPointer s_methodPointers[72] =
 	WakeGenerator_Update_m04E673E317AF9C1A673E9AECAA7880DEF83AAD27,
 	WakeGenerator_OnDrawGizmos_mB9B280CD35C8A9589AB18EE60B7C243AE7A1FF4D,
 	WakeGenerator__ctor_m2A55FEB43DF6AB008AA2A6A093729534199D5033,
+	BoatVRController_Update_mFF0C8F5ADA5C51C8DD536E3EB055BFA9BEEC5769,
+	BoatVRController__ctor_mB7E6905D2EC3745602AD73902A605C9573FD3664,
 };
-static const int32_t s_InvokerIndices[72] = 
+static const int32_t s_InvokerIndices[74] = 
 {
 	4714,
 	4714,
@@ -305,12 +311,14 @@ static const int32_t s_InvokerIndices[72] =
 	4714,
 	4714,
 	4714,
+	4714,
+	4714,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	72,
+	74,
 	s_methodPointers,
 	0,
 	NULL,
