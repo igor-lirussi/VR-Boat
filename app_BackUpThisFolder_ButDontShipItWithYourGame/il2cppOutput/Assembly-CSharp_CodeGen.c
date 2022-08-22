@@ -160,7 +160,13 @@ extern void WakeGenerator__ctor_m2A55FEB43DF6AB008AA2A6A093729534199D5033 (void)
 extern void BoatVRController_Update_mFF0C8F5ADA5C51C8DD536E3EB055BFA9BEEC5769 (void);
 // 0x0000004A System.Void BoatVRController::.ctor()
 extern void BoatVRController__ctor_mB7E6905D2EC3745602AD73902A605C9573FD3664 (void);
-static Il2CppMethodPointer s_methodPointers[74] = 
+// 0x0000004B System.Void RotateGameObject::Start()
+extern void RotateGameObject_Start_m99C38F8FF408EA5DC5227D78964106594FD25957 (void);
+// 0x0000004C System.Void RotateGameObject::FixedUpdate()
+extern void RotateGameObject_FixedUpdate_m3A2ECB33A93F1EAE8B3B59BF8D4C378F54D06BA8 (void);
+// 0x0000004D System.Void RotateGameObject::.ctor()
+extern void RotateGameObject__ctor_m75F085A18A35A13EDD0F5839DA1C1FDE1737F1F7 (void);
+static Il2CppMethodPointer s_methodPointers[77] = 
 {
 	BoatController_Update_m0021C51B5157FAE85F0048B0DF541A03E95C99FC,
 	BoatController__ctor_mBA78C64F2F311CF0258C520D2EF2C8DF0851079F,
@@ -236,8 +242,11 @@ static Il2CppMethodPointer s_methodPointers[74] =
 	WakeGenerator__ctor_m2A55FEB43DF6AB008AA2A6A093729534199D5033,
 	BoatVRController_Update_mFF0C8F5ADA5C51C8DD536E3EB055BFA9BEEC5769,
 	BoatVRController__ctor_mB7E6905D2EC3745602AD73902A605C9573FD3664,
+	RotateGameObject_Start_m99C38F8FF408EA5DC5227D78964106594FD25957,
+	RotateGameObject_FixedUpdate_m3A2ECB33A93F1EAE8B3B59BF8D4C378F54D06BA8,
+	RotateGameObject__ctor_m75F085A18A35A13EDD0F5839DA1C1FDE1737F1F7,
 };
-static const int32_t s_InvokerIndices[74] = 
+static const int32_t s_InvokerIndices[77] = 
 {
 	4714,
 	4714,
@@ -313,12 +322,15 @@ static const int32_t s_InvokerIndices[74] =
 	4714,
 	4714,
 	4714,
+	4714,
+	4714,
+	4714,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	74,
+	77,
 	s_methodPointers,
 	0,
 	NULL,

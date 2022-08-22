@@ -31,7 +31,7 @@ public class BoatVRController : MonoBehaviour
     down=inputAxis[1]<-0.5;
 
     //debugText.text=string.Format("right {0}\n left {1}\n up {2}\n down {3}", right, left, up, down);
-    debugText.text=string.Format("throttle {0}\n engine rmp {1}\n", ship.throttle, ship.engine_rpm);
+    //debugText.text=string.Format("throttle {0}\n engine rmp {1}\n", ship.throttle, ship.engine_rpm);
 
     if (left)
       ship.RudderLeft();
