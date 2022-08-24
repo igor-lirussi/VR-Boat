@@ -11,13 +11,12 @@ Material:
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
   - _DETAIL_MULX2
-  - _EMISSION
   - _METALLICGLOSSMAP
   - _NORMALMAP
   - _PARALLAXMAP
   m_InvalidKeywords:
   - _SPECGLOSSMAP
-  m_LightmapFlags: 1
+  m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
