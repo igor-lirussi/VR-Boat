@@ -4,6 +4,8 @@ A Virtual Reality game/scenario on a Boat, driving the boat and exploring the me
 
 Built during VR Hackathon Climate Change 20-21/08/2022.
 
+[[All my VR Projects here]](https://github.com/igor-lirussi?tab=repositories&q=virtual-reality)
+
 ### Topics:
 - VR Virtual-Reality 
 - Climate Change
