@@ -23,6 +23,12 @@ Built during VR Hackathon Climate Change 20-21/08/2022.
 ## Install 
 *   clone the repository
 *   open with UnityHub
+*   go to [Installs], select your version (shold be 2021 or more, if not, [install editor]->2021.3.8) -> click the gear ⚙️ -> _Add modules_
+*   check **Android build support** with the two submodules
+*   check **Windows build support (IL2CPP)**
+*   click _continue_ and _install_
+
+*   if you have trouble, follow (this tutorial)[https://youtu.be/pNYY1JsS7tY]
 *   connect your device (in developer mode) with a usb cable
 *   build and run the app
 
