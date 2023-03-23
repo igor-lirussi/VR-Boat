@@ -20,20 +20,28 @@ Built during VR Hackathon Climate Change 20-21/08/2022.
 - Unity 2021.3
 - Oculus Quest 2
 
-## Install 
-*   clone the repository
-*   open with UnityHub
-*   go to [Installs], select your version (shold be 2021 or more, if not, [install editor]->2021.3.8) -> click the gear ⚙️ -> _Add modules_
-*   check **Android build support** with the two submodules
-*   check **Windows build support (IL2CPP)**
-*   click _continue_ and _install_
-
-*   if you have trouble, follow (this tutorial)[https://youtu.be/pNYY1JsS7tY]
-*   connect your device (in developer mode) with a usb cable
-*   build and run the app
-
 ## Run
 Download the .apk in [releases](https://github.com/igor-lirussi/VR-Boat/releases) and install it in the VR Headset
+
+## Install Project
+- clone the repository
+- open with UnityHub
+- go to [Installs], select your version (shold be 2021 or more, if not:[install editor]->2021.3.8) -> click the gear ⚙️ -> _Add modules_
+  - check **Android build support** with the two submodules
+  - check **Windows build support (IL2CPP)**
+  - click _continue_ and _install_
+- open the project: [Projects]-> double click "VR-Boat" or [Open]->select VR-Boat folder
+- go to _File_ -> _Bulid Settings_ 
+  - check there is "MainScene" in _Scenes in Build_, or add it with "Add Open Scenes"
+  - select platform: _Android_
+  - set texture compression: _ASTC_
+  - plug your QUEST device (in [developer mode](https://developer.oculus.com/documentation/native/android/mobile-device-setup/#enable-developer-mode)) with a usb cable
+  - select run device: _"Oculus Quest 2"_
+  - in bottom left corner change "Max Texture Size" to _Max 2048_
+  - click _Switch Platform_
+- go to _File_ -> _Bulid Settings_ -> _Build and Run_
+
+#### if you have trouble, follow [this tutorial](https://youtu.be/pNYY1JsS7tY)
 
 ## Useful Resources & Extra
 - Links
