@@ -259,3 +259,17 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  
+defaults:
+  layout: landingpage
+  title: '<span class="chulapa">VR-Boat</span>'
+  subtitle: A VR-Eperience to understand the effects of ice-melting
+  excerpt: A VR experience
+  header_type: splash
+  header_img: "./img/result.jpg"
+  include_on_search: true
+  show_sociallinks: false
+  project_links:
+      - url: https://github.com/igor-lirussi/VR-Boat
+        icon: fab fa-github fa-lg
+        label: Repo
