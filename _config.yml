@@ -227,7 +227,6 @@ plugins:
 # Exclude these files from production site
 exclude:
   - LICENSE
-  - README.md
   - Gemfile
   - vendor
   - /docs # ignore Chulapa /docs
