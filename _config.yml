@@ -175,16 +175,12 @@ defaults:
       path: ""
     values:
       layout: "landingpage"
-      title: '<span class="chulapa">VR-Boat</span>'
+      title: "VR-Boat"
       subtitle: "A VR-Eperience to understand the effects of ice-melting"
       excerpt: "A VR experience"
       header_type: "splash"
       header_img: "./img/result.jpg"
       show_sociallinks: false
-      project_links:
-          - url: "https://github.com/igor-lirussi/VR-Boat"
-            icon: "fab fa-github fa-lg"
-            label: "Repo"
       cloudtag_url        : "/tags"       #This is where the link on tags would redirect
       cloudcategory_url   : "/categories" #This is where the link on categories would redirect
   -
