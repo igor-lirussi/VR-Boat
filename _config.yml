@@ -178,7 +178,7 @@ defaults:
       title: "VR-Boat"
       subtitle: "A VR-Eperience to understand the effects of ice-melting"
       excerpt: "A VR experience"
-      header_type: "splash"
+      header_type: "image"
       header_img: "./img/result.jpg"
       show_sociallinks: false
       cloudtag_url        : "/tags"       #This is where the link on tags would redirect
