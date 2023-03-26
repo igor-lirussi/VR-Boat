@@ -174,7 +174,7 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "minimal"
+      layout: landingpage
       title: "VR-Boat"
       subtitle: "A VR-Eperience to understand the effects of ice-melting"
       excerpt: "A VR experience"
