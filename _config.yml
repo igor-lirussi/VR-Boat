@@ -175,12 +175,15 @@ defaults:
       path: ""
     values:
       layout: landingpage
+      og_image: "./img/result.jpg" #Social preview
+      excerpt: "A VR experience to understand the effects of ice-melting" #Social preview
       title: "VR-Boat"
       subtitle: "A VR-Eperience to understand the effects of ice-melting"
-      excerpt: "A VR experience"
       header_type: "splash"
       header_img: "./img/result.jpg"
-      show_sociallinks: false
+      show_sociallinks: true
+      show_toc          : false
+      include_on_search : true
       cloudtag_url        : "/tags"       #This is where the link on tags would redirect
       cloudcategory_url   : "/categories" #This is where the link on categories would redirect
   -
