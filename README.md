@@ -1,8 +1,11 @@
 # VR-Boat
 A Virtual Reality game/scenario on a Boat, driving the boat and exploring the melting icebergs and polluted oceans. 
+
 ## Description 
-A Sea environment where the player navigates a boat. </br>
-The surroundings are icebergs that melt, some animated animals are present. </br>
+A Sea environment where the player navigates a boat.
+
+The surroundings are icebergs that melt, some animated animals are present. 
+
 The player can pick up some objects floating. 
 
 Built during VR Hackathon Climate Change 20-21/08/2022.
@@ -49,7 +52,9 @@ Download the .apk in [releases](https://github.com/igor-lirussi/VR-Boat/releases
   - [How to Make VR Games in 2022 - Updated Unity VR Tutorial](https://www.youtube.com/watch?v=yxMzAw2Sg5w&t=0s)
 
 - Resources
-  - [This is Climate Change | MIT – Docubase ](https://docubase.mit.edu/project/this-is-climate-change/)
+  - [This is Climate Change, MIT – Docubase ](https://docubase.mit.edu/project/this-is-climate-change/)
+
+{% include_cached snippets/masonry.html internal="gallery" %}
 
 ## Authors
 * **Igor Lirussi** @ BOUN Boğaziçi University - BuViar Lab
