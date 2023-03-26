@@ -186,6 +186,10 @@ defaults:
       include_on_search : true
       cloudtag_url        : "/tags"       #This is where the link on tags would redirect
       cloudcategory_url   : "/categories" #This is where the link on categories would redirect
+      project_links:
+          - url: https://github.com/igor-lirussi/VR-Boat
+            icon: fab fa-github fa-lg
+            label: GitHub
   -
     scope:
       path: ""
