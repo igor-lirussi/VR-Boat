@@ -223,7 +223,7 @@ defaults:
       include_on_feed   : true
   -
     scope:
-      path: "/img" #Links position of the images with gallery var 
+      path: "img" #Links position of the images with gallery var 
     values:
       image_col         : gallery
 
