@@ -10,7 +10,7 @@ The player can pick up some objects floating.
 
 Built during VR Hackathon Climate Change 20-21/08/2022.
 
-[[All my VR Projects here]](https://github.com/igor-lirussi?tab=repositories&q=virtual-reality)
+[[All my VR Projects here]](https://github.com/igor-lirussi?tab=repositories&q=virtual-reality){: .btn}
 
 ### Topics:
 - VR Virtual-Reality 
