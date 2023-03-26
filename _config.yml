@@ -115,14 +115,8 @@ navbar:
     url     :  # default["url/baseurl"]
     img     :  # An small image, try 30x30px
   nav:
-  - title   : # Label
+  - title   : Home # Label
     url     : # url
-  - title   : # Label submenu
-    child:
-     - title: # Child label
-       url  : # child url
-     - title: # Child label
-       url  : # child url
 
 #Social links to be placed on your site footer
 footer:
@@ -186,7 +180,7 @@ defaults:
       header_img: "./img/result.jpg"
       show_sociallinks: true
       show_toc          : false
-      include_on_search : true
+      include_on_search : false
       cloudtag_url        : "/tags"       #This is where the link on tags would redirect
       cloudcategory_url   : "/categories" #This is where the link on categories would redirect
       project_links:
