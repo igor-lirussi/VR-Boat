@@ -46,6 +46,25 @@ Download the .apk in [releases](https://github.com/igor-lirussi/VR-Boat/releases
 
 #### if you have trouble, follow [this tutorial](https://youtu.be/pNYY1JsS7tY)
 
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="p-5">
+          <h2 class="display-4 text-center te t-lg-left">Extras</h2>
+          <p>Some objects/animals are present to enhance the experience</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-5">
+          <img class="img-fluid rounded-circle" src="./img/result.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 ## Useful Resources & Extra
 - Links
   - [How To Build a Unity VR project to the Oculus Quest (and other devices) ](https://www.youtube.com/watch?v=pNYY1JsS7tY)
