@@ -22,17 +22,18 @@ public class BoatVRController : MonoBehaviour
 
   void Update()
   {
+    //get input
     InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
     device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+    //find direction to move boat
+    right=inputAxis[0]>0.5 || Input.GetKeyDown(KeyCode.RightArrow);
+    left=inputAxis[0]<-0.5 || Input.GetKeyDown(KeyCode.LeftArrow);
     
+    up =inputAxis[1]>0.5 || Input.GetKeyDown(KeyCode.UpArrow);
+    down=inputAxis[1]<-0.5 || Input.GetKeyDown(KeyCode.DownArrow);
+    //set power 
     power = inputAxis[1];
     engineAudioSource.volume = Math.Abs(power);
-
-    right=inputAxis[0]>0.5;
-    left=inputAxis[0]<-0.5;
-    
-    up=inputAxis[1]>0.5;
-    down=inputAxis[1]<-0.5;
 
     debugText.text=string.Format("right {0}\n left {1}\n up {2}\n down {3}", right, left, up, down);
     debugText.text=string.Format("throttle {0}\n engine rmp {1}\n", ship.throttle, ship.engine_rpm);
