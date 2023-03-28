@@ -29,7 +29,7 @@ Download the .apk in [releases](https://github.com/igor-lirussi/VR-Boat/releases
 ## Install Project
 - clone the repository
 - open with UnityHub
-- go to [Installs], select your version (shold be 2021 or more, if not:[install editor]->2021.3.8) -> click the gear ⚙️ -> _Add modules_
+- go to [Installs], select your version (shold be 2021 or more, if not:[install editor]->2021.3.21) -> click the gear ⚙️ -> _Add modules_
   - check **Android build support** with the two submodules
   - check **Windows build support (IL2CPP)**
   - click _continue_ and _install_
