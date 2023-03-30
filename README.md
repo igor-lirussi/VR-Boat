@@ -57,7 +57,7 @@ Download the .apk in [releases](https://github.com/igor-lirussi/VR-Boat/releases
       </div>
       <div class="col-lg-6">
         <div class="p-5">
-          <img class="img-fluid rounded-circle" src="./img/polarbear.jpg" alt="">
+          <img class="img-fluid rounded-circle" src="./img/polarbear.jpg" alt="" style="width:500px;">
         </div>
       </div>
     </div>
