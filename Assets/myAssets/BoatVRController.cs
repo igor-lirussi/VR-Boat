@@ -26,11 +26,11 @@ public class BoatVRController : MonoBehaviour
     InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
     device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
     //find direction to move boat
-    right=inputAxis[0]>0.5 || Input.GetKeyDown(KeyCode.RightArrow);
-    left=inputAxis[0]<-0.5 || Input.GetKeyDown(KeyCode.LeftArrow);
+    right=inputAxis[0]>0.5 || Input.GetKey(KeyCode.RightArrow);
+    left=inputAxis[0]<-0.5 || Input.GetKey(KeyCode.LeftArrow);
     
-    up =inputAxis[1]>0.5 || Input.GetKeyDown(KeyCode.UpArrow);
-    down=inputAxis[1]<-0.5 || Input.GetKeyDown(KeyCode.DownArrow);
+    up=inputAxis[1]>0.5 || Input.GetKey(KeyCode.UpArrow);
+    down=inputAxis[1]<-0.5 || Input.GetKey(KeyCode.DownArrow);
     //set power 
     power = inputAxis[1];
     engineAudioSource.volume = Math.Abs(power);
@@ -74,7 +74,7 @@ public class BoatVRController : MonoBehaviour
       forward = false;
       ship.Reverse();
     }
-    else if (ship.engine_rpm == 0 && up && !forward) //down is unsure
+    else if (ship.engine_rpm == 0 && up && !forward)
     {
       forward = true;
       ship.Reverse();
