@@ -37,10 +37,10 @@ public class ZeroOceanAdvanced : MonoBehaviour
   static Wave[] waves =
   {
     new Wave(99, 0f, 0f, 0f, new Vector2(1.0f,  0.2f)),
-    new Wave(99, 0f, 0f, 0f, new Vector2(1.0f,  0.2f)),
-    new Wave(99, 0f, 0f, 0f, new Vector2(1.0f,  0.2f)),
-    new Wave(99, 0f, 0f, 0f, new Vector2(1.0f,  0.2f)),
-    new Wave(99, 0f, 0f, 0f, new Vector2(1.0f,  0.2f))
+    new Wave(99, 0f, 0f, 0f, new Vector2(1.0f,  3.0f)),
+    new Wave(99, 0f, 0f, 0f, new Vector2(2.0f,  4.0f)),
+    new Wave(99, 0f, 0f, 0f, new Vector2(-1.0f, 0.0f)),
+    new Wave(99, 0f, 0f, 0f, new Vector2(-1.0f, 1.2f))
     
   };
 
