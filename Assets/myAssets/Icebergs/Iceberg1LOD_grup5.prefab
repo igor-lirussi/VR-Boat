@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 20500000}
   m_Layer: 0
   m_Name: Iceberg1LOD_grup5
-  m_TagString: Untagged
+  m_TagString: rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
