@@ -17,7 +17,6 @@ public class BoatVRController : MonoBehaviour
   private bool left = false;
   private bool right = false;
   //private float threshold = 0.5f;
-  private float power = 0; //power given from the player, from -1 to 1
   public AudioSource engineAudioSource;
 
   void Update()
