@@ -18,12 +18,19 @@ public class AreaPolarbearScript : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-
         if (collider.gameObject.name == "Boat")
         {
             Debug.Log("********* " + collider.gameObject.name + " collided with " + this.name);
             GameObject.Find("Boat").GetComponent<ExperienceScript>().setVisitedAreaPolarbear();
         }
+    }
 
+    private void OnTriggerExit(Collider collider)
+    {
+        if (collider.gameObject.name == "Boat")
+        {
+            Debug.Log("********* " + collider.gameObject.name + " exit " + this.name);
+            GameObject.Find("Boat").GetComponent<ExperienceScript>().setExitAreaPolarbear();
+        }
     }
 }
