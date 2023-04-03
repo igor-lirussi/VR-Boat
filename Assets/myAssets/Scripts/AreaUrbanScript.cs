@@ -18,12 +18,11 @@ public class AreaUrbanScript : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        Debug.Log($"********* Trigger Collision started with {collider.gameObject.name}");
 
         if (collider.gameObject.name == "Boat")
         {
-            Debug.Log("********* " + collider.gameObject.name + "collided with " + this.name);
-            GameObject.Find("Boat").GetComponent<ExperienceScript>().visitedAreaUrban = true;
+            Debug.Log("********* " + collider.gameObject.name + " collided with " + this.name);
+            GameObject.Find("Boat").GetComponent<ExperienceScript>().setVisitedAreaUrban();
         }
 
     }

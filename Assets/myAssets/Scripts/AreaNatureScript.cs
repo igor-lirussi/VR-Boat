@@ -18,12 +18,11 @@ public class AreaNatureScript : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        Debug.Log($"********* Trigger Collision started with {collider.gameObject.name}");
 
         if (collider.gameObject.name == "Boat")
         {
-            Debug.Log("********* " + collider.gameObject.name + "collided with " + this.name);
-            GameObject.Find("Boat").GetComponent<ExperienceScript>().visitedAreaNature = true;
+            Debug.Log("********* " + collider.gameObject.name + " collided with " + this.name);
+            GameObject.Find("Boat").GetComponent<ExperienceScript>().setVisitedAreaNature();
         }
 
     }

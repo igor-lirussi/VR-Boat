@@ -23,10 +23,9 @@ public class CollisionSound : MonoBehaviour
 
     void OnCollisionEnter(Collision collision) 
     {
-        Debug.Log("********* Collision ");
         if(string.Equals(collision.gameObject.tag,"rock")) 
         {   
-            Debug.Log("********* rock");
+            Debug.Log("********* hit");
             playerAudioSource.clip = clip1;
             playerAudioSource.PlayOneShot(clip1,volume);
         } 
