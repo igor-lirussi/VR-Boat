@@ -47,16 +47,16 @@ public class ExperienceScript : MonoBehaviour
     {
         if (visitedAreaPolarbear && visitedAreaNature && visitedAreaUrban)
         {
+            visitedAreaPolarbear = false;
+            visitedAreaNature = false;
+            visitedAreaUrban = false;
             if (!seaRised)
             {
-                Invoke("riseSea", 10.0f);
+                Invoke("riseSea", 30.0f);
             } else
             {
                 Invoke("endExperience", 10.0f);
             }
-            visitedAreaPolarbear = false;
-            visitedAreaNature = false;
-            visitedAreaUrban = false;
         }
     }
 
