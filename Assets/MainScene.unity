@@ -22238,7 +22238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAudioSource: {fileID: 1562069060}
-  volume: 0.5
+  volume: 0.2
   clip1: {fileID: 8300000, guid: 6462d5761168f0842a2bc3ba665681a0, type: 3}
 --- !u!114 &114912875674959880
 MonoBehaviour:

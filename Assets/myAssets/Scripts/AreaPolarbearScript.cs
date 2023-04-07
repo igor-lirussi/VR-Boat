@@ -20,7 +20,7 @@ public class AreaPolarbearScript : MonoBehaviour
     {
         if (collider.gameObject.name == "Boat")
         {
-            Debug.Log("********* " + collider.gameObject.name + " collided with " + this.name);
+            Debug.Log("********* " + collider.gameObject.name + " entered " + this.name);
             GameObject.Find("Boat").GetComponent<ExperienceScript>().setVisitedAreaPolarbear();
         }
     }

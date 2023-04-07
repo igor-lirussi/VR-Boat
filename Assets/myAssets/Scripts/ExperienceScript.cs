@@ -13,6 +13,7 @@ public class ExperienceScript : MonoBehaviour
     private bool seaRised = false;
 
     public bool playAudio = false;
+    private bool soundForAreas = true; // used to TEMPORARY deactivate sound of enter&exit areas
     private float volume = 0.8f;
     public AudioSource playerAudioSource;
     public AudioClip initialClip;
@@ -47,9 +48,11 @@ public class ExperienceScript : MonoBehaviour
     {
         if (visitedAreaPolarbear && visitedAreaNature && visitedAreaUrban)
         {
+            //set all areas to false to avoid reenter in this if in the next update
             visitedAreaPolarbear = false;
             visitedAreaNature = false;
             visitedAreaUrban = false;
+            //call functions with delay
             if (!seaRised)
             {
                 Invoke("riseSea", 30.0f);
@@ -64,14 +67,15 @@ public class ExperienceScript : MonoBehaviour
     public void setVisitedAreaPolarbear()
     {
         visitedAreaPolarbear = true;
-        if (playAudio)
+        if (playAudio && soundForAreas)
         {
             playerAudioSource.PlayOneShot(enterPolarbearArea, volume);
+            temporaryDeactivateSoundForAreaTrigger();
         }
     }
     public void setExitAreaPolarbear()
     {
-        if (playAudio)
+        if (playAudio && soundForAreas)
         {
             playerAudioSource.PlayOneShot(exitPolarbearArea, volume);
         }
@@ -81,14 +85,15 @@ public class ExperienceScript : MonoBehaviour
     public void setVisitedAreaNature()
     {
         visitedAreaNature = true;
-        if (playAudio)
+        if (playAudio && soundForAreas)
         {
             playerAudioSource.PlayOneShot(enterNatureArea, volume);
+            temporaryDeactivateSoundForAreaTrigger();
         }
     }
     public void setExitAreaNature()
     {
-        if (playAudio)
+        if (playAudio && soundForAreas)
         {
             playerAudioSource.PlayOneShot(exitNatureArea, volume);
         }
@@ -98,14 +103,15 @@ public class ExperienceScript : MonoBehaviour
     public void setVisitedAreaUrban()
     {
         visitedAreaUrban = true;
-        if (playAudio)
+        if (playAudio && soundForAreas)
         {
             playerAudioSource.PlayOneShot(enterUrbanArea, volume);
+            temporaryDeactivateSoundForAreaTrigger();
         }
     }
     public void setExitAreaUrban()
     {
-        if (playAudio)
+        if (playAudio && soundForAreas)
         {
             playerAudioSource.PlayOneShot(exitUrbanArea, volume);
         }
@@ -114,7 +120,8 @@ public class ExperienceScript : MonoBehaviour
 
     public void riseSea()
     {
-        Debug.Log("********* Moving boat to start posiiton");
+        temporaryDeactivateSoundForAreaTrigger();
+        Debug.Log("********* Moving boat to start position");
         GameObject.Find("Boat").transform.position = initialBoatPosition;
         GameObject.Find("Boat").transform.rotation = initialBoatRotation;
 
@@ -134,6 +141,19 @@ public class ExperienceScript : MonoBehaviour
         {
             playerAudioSource.PlayOneShot(finishClip, volume);
         }
+    }
+
+    private void temporaryDeactivateSoundForAreaTrigger()
+    {
+        soundForAreas = false;
+        Debug.Log("********* Sound for areas NOT active");
+        Invoke("activateSoundForAreaTriggers", 5.0f);
+    }
+
+    private void activateSoundForAreaTriggers()
+    {
+        Debug.Log("********* Sound for areas active");
+        soundForAreas = true;
     }
 }
     
