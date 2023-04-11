@@ -55,7 +55,7 @@ public class ExperienceScript : MonoBehaviour
             //call functions with delay
             if (!seaRised)
             {
-                Invoke("riseSea", 30.0f);
+                Invoke("riseSea", 90.0f);
             } else
             {
                 Invoke("endExperience", 10.0f);
