@@ -7989,7 +7989,7 @@ MeshRenderer:
   m_GameObject: {fileID: 782513529}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -16710,7 +16710,7 @@ PrefabInstance:
     - target: {fileID: 2384296, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a3017686c362bdb42a23562aab21b1dc, type: 2}
+      objectReference: {fileID: 2100000, guid: 8828d7ea297ecaa408a154f3a7340e15, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
 --- !u!1001 &1417909358
@@ -21518,6 +21518,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 78018422469a48a40bb2bb44eb8c5d75, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51ed24a96e6c19f439192ded39075c94, type: 2}
     m_RemovedComponents:
     - {fileID: 6500000, guid: 78018422469a48a40bb2bb44eb8c5d75, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 78018422469a48a40bb2bb44eb8c5d75, type: 3}
