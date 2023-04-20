@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playAudio: 1
   playerAudioSource: {fileID: 538720477}
-  initialClip: {fileID: 8300000, guid: 06ef201fd159a7945aaa143b2fc5f316, type: 3}
+  initialClip: {fileID: 8300000, guid: 23a510443400a9c45ae6bfce5825123b, type: 3}
   seconds: 10
   nextSceneName: MainScene
 --- !u!1 &2120621195
