@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/TempBreakScene.unity
+    guid: d58b547b6f802314298fe482bcde7a08
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8160aac75047a0d4489dcd72b8e4d4a0, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6576a71f9c82a6b4591f0ef32b0996e7, type: 2}

@@ -35,7 +35,8 @@ public class BoatVRController : MonoBehaviour
     engineAudioSource.volume = Math.Abs(inputAxis[1]);
 
     //set debug text
-    debugText.text=string.Format("throttle {0}\n engine rmp {1}\n", ship.throttle, ship.engine_rpm);
+    //debugText.text=string.Format("throttle {0}\n engine rmp {1}\n", ship.throttle, ship.engine_rpm);
+    debugText.text=string.Format("rud {0}\n ang {1}\n", ship.rudder, ship.angle);
 
     if (left)
       ship.RudderLeft();

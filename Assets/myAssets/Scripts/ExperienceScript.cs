@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExperienceScript : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class ExperienceScript : MonoBehaviour
     public bool visitedAreaUrban = false;
 
     public int seaLevelRisingMeters = 10;
-    private bool seaRised = false;
+
+    public bool tempBreakScene = true;
 
     public bool playAudio = false;
     private bool soundForAreas = true; // used to TEMPORARY deactivate sound of enter&exit areas
@@ -37,9 +39,16 @@ public class ExperienceScript : MonoBehaviour
         initialBoatPosition = this.transform.position;
         initialBoatRotation = this.transform.rotation;
 
-        if (playAudio)
+        if (!GlobalVariables.SeaRisen)
         {
-            playerAudioSource.PlayOneShot(initialClip, volume);
+            if (playAudio)
+            {
+                playerAudioSource.PlayOneShot(initialClip, volume);
+            }
+        }
+        else
+        {
+            riseSea();
         }
     }
 
@@ -53,9 +62,14 @@ public class ExperienceScript : MonoBehaviour
             visitedAreaNature = false;
             visitedAreaUrban = false;
             //call functions with delay
-            if (!seaRised)
+            if (!GlobalVariables.SeaRisen)
             {
-                Invoke("riseSea", 90.0f);
+                if (tempBreakScene)
+                {
+                    Invoke("loadTempBreakScene", 90.0f);
+                } else {
+                    Invoke("riseSea", 90.0f);
+                }
             } else
             {
                 Invoke("endExperience", 10.0f);
@@ -117,16 +131,22 @@ public class ExperienceScript : MonoBehaviour
         }
     }
 
+    public void loadTempBreakScene()
+    {
+        Debug.Log("********* Loading TempBreakScene");
+        //SceneManager.LoadSceneAsync("TempBreakScene", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("TempBreakScene");
+    }
 
     public void riseSea()
     {
         temporaryDeactivateSoundForAreaTrigger();
-        Debug.Log("********* Moving boat to start position");
+        Debug.Log("********* Moving boat to start position"); //moving boat might start area triggers
         GameObject.Find("Boat").transform.position = initialBoatPosition;
         GameObject.Find("Boat").transform.rotation = initialBoatRotation;
 
         Debug.LogWarning("********* Rising Sea ");
-        seaRised = true;
+        GlobalVariables.SeaRisen = true;
         GameObject.Find("Boat").transform.position += new Vector3(0, seaLevelRisingMeters, 0);
         GameObject.Find("Sea").transform.position += new Vector3(0, seaLevelRisingMeters, 0);
         if (playAudio)
@@ -146,13 +166,13 @@ public class ExperienceScript : MonoBehaviour
     private void temporaryDeactivateSoundForAreaTrigger()
     {
         soundForAreas = false;
-        Debug.Log("********* Sound for areas NOT active");
+        Debug.Log("* Sound for areas NOT active *");
         Invoke("activateSoundForAreaTriggers", 5.0f);
     }
 
     private void activateSoundForAreaTriggers()
     {
-        Debug.Log("********* Sound for areas active");
+        Debug.Log("* Sound for areas active *");
         soundForAreas = true;
     }
 }

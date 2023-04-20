@@ -16,7 +16,7 @@ public class PropellerBoats : MonoBehaviour
   public float acceleration_cst = 1.0F;
   public float drag = 0.01F;
 
-  float angle;
+  public float angle;
 
   void Awake()
   {
