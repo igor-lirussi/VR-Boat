@@ -72,7 +72,7 @@ public class ExperienceScript : MonoBehaviour
                 }
             } else
             {
-                Invoke("endExperience", 10.0f);
+                Invoke("endExperience", 90.0f);
             }
         }
     }
