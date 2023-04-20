@@ -11728,6 +11728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResearchStation
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cc47001371b5eb5489ab03977e78e9f4, type: 3}
+      propertyPath: m_TagString
+      value: rock
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cc47001371b5eb5489ab03977e78e9f4, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -11786,6 +11790,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cc47001371b5eb5489ab03977e78e9f4, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: cc47001371b5eb5489ab03977e78e9f4, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: cc47001371b5eb5489ab03977e78e9f4, type: 3}
@@ -16754,6 +16762,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 33c8d5fa5b63f0f4292d6763ab6c443d, type: 3}
   m_PrefabInstance: {fileID: 1237965717}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1241778923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: cc47001371b5eb5489ab03977e78e9f4, type: 3}
+  m_PrefabInstance: {fileID: 815774906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1241778926
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241778923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: cc47001371b5eb5489ab03977e78e9f4, type: 3}
 --- !u!4 &1244594885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d6b40ce3457ff954e8faab16436c9d29, type: 3}

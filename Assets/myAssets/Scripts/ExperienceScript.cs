@@ -153,6 +153,9 @@ public class ExperienceScript : MonoBehaviour
         {
             playerAudioSource.PlayOneShot(seaRiseClip, volume);
         }
+        visitedAreaPolarbear = false;
+        visitedAreaNature = false;
+        visitedAreaUrban = false;
     }
 
     public void endExperience()
