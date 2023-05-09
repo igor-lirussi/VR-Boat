@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ExperienceScript : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ExperienceScript : MonoBehaviour
     public bool visitedAreaPolarbear = false;
     public bool visitedAreaNature = false;
     public bool visitedAreaUrban = false;
+    public TextMeshPro debugText;
 
     public int seaLevelRisingMeters = 10;
 
@@ -55,6 +57,7 @@ public class ExperienceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //debugText.text = string.Format("Artic: {0}\nNature: {1}\nUrban: {1}", visitedAreaPolarbear?"X":" ", visitedAreaNature?"X":" ", visitedAreaUrban?"X":" ");
         if (visitedAreaPolarbear && visitedAreaNature && visitedAreaUrban)
         {
             //set all areas to false to avoid reenter in this if in the next update
@@ -134,8 +137,8 @@ public class ExperienceScript : MonoBehaviour
     public void loadTempBreakScene()
     {
         Debug.Log("********* Loading TempBreakScene");
-        //SceneManager.LoadSceneAsync("TempBreakScene", LoadSceneMode.Additive);
         SceneManager.LoadSceneAsync("TempBreakScene");
+        //SceneManager.LoadSceneAsync("TempBreakScene", LoadSceneMode.Additive);
     }
 
     public void riseSea()
