@@ -69,9 +69,9 @@ public class ExperienceScript : MonoBehaviour
             {
                 if (tempBreakScene)
                 {
-                    Invoke("loadTempBreakScene", 90.0f);
+                    Invoke("loadTempBreakScene", 120.0f);
                 } else {
-                    Invoke("riseSea", 90.0f);
+                    Invoke("riseSea", 120.0f);
                 }
             } else
             {

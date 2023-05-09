@@ -1290,7 +1290,7 @@ MonoBehaviour:
   playAudio: 1
   playerAudioSource: {fileID: 538720477}
   initialClip: {fileID: 8300000, guid: 06ef201fd159a7945aaa143b2fc5f316, type: 3}
-  seconds: 60
+  seconds: 10
   nextSceneName: MainScene
 --- !u!114 &2095738665
 MonoBehaviour:
@@ -1307,6 +1307,7 @@ MonoBehaviour:
   inputSource: 4
   codeSeaRise: xyxy
   nextSceneName: MainScene
+  codeBoostBoat: yyyxxxyyy
   debugText: {fileID: 0}
 --- !u!1 &2120621195
 GameObject:
