@@ -190,7 +190,7 @@ defaults:
             icon: fab fa-github fa-lg
             label: GitHub
           - url: https://sidequestvr.com/app/16835
-            icon: fab fa-vr-cardboard fa-lg
+            icon: fa-solid fa-vr-cardboard fa-lg
             label: Sidequest
   -
     scope:
