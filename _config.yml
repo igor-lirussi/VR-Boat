@@ -117,6 +117,8 @@ navbar:
   nav:
   - title   : Home # Label
     url     : # url
+  - title   : Privacy Policy # Label
+    url     : https://igor-lirussi.github.io/VR-Boat/privacy # url
 
 #Social links to be placed on your site footer
 footer:
@@ -187,6 +189,9 @@ defaults:
           - url: https://github.com/igor-lirussi/VR-Boat
             icon: fab fa-github fa-lg
             label: GitHub
+          - url: https://sidequestvr.com/app/16835
+            icon: fab fa-vr-cardboard fa-lg
+            label: Sidequest
   -
     scope:
       path: ""
