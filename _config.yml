@@ -116,7 +116,7 @@ navbar:
     img     :  # An small image, try 30x30px
   nav:
   - title   : Home # Label
-    url     : # url
+    url     : https://igor-lirussi.github.io/VR-Boat # url
   - title   : Privacy Policy # Label
     url     : https://igor-lirussi.github.io/VR-Boat/privacy # url
 
