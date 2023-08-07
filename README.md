@@ -24,7 +24,8 @@ Built during VR Hackathon Climate Change 20-21/08/2022.
 - Oculus Quest 2
 
 ## Run
-Download the .apk in [releases](https://github.com/igor-lirussi/VR-Boat/releases) and install it in the VR Headset
+Download the .apk in [releases](https://github.com/igor-lirussi/VR-Boat/releases) and install it in the VR Headset. 
+Or if you have installed SideQuest in your VR, [add it to your library](https://sidequestvr.com/app/16835).
 
 ## Install Project
 - clone the repository
@@ -64,12 +65,14 @@ Download the .apk in [releases](https://github.com/igor-lirussi/VR-Boat/releases
   </div>
 </section>
 
-
+## Cheat codes
+  - `yyyxxxyyy` to speed up the boat.
+  - `xyxy` to skip to the sea-raised scenario.
+    
 ## Useful Resources & Extra
 - Links
   - [How To Build a Unity VR project to the Oculus Quest (and other devices) ](https://www.youtube.com/watch?v=pNYY1JsS7tY)
   - [How to Make VR Games in 2022 - Updated Unity VR Tutorial](https://www.youtube.com/watch?v=yxMzAw2Sg5w&t=0s)
-
 - Resources
   - [This is Climate Change, MIT – Docubase ](https://docubase.mit.edu/project/this-is-climate-change/)
 
