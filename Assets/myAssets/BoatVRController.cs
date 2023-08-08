@@ -11,6 +11,7 @@ public class BoatVRController : MonoBehaviour
 
   public XRNode inputSource;
   public TextMeshPro debugText;
+  public UnityEngine.UI.Image virtualJoystick;
   private Vector2 inputAxis;
   private bool up = false;
   private bool down = false;
@@ -24,12 +25,13 @@ public class BoatVRController : MonoBehaviour
     //get input
     InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
     device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+    Vector2 joystick = virtualJoystick.GetComponent<VirtualJoystickScript>().GetInputDirection();
     //find direction to move boat
-    right=inputAxis[0]>0.5 || Input.GetKey(KeyCode.RightArrow);
-    left=inputAxis[0]<-0.5 || Input.GetKey(KeyCode.LeftArrow);
+    right = inputAxis[0]>0.5 || Input.GetKey(KeyCode.RightArrow) || joystick.x>0.5;
+    left = inputAxis[0]<-0.5 || Input.GetKey(KeyCode.LeftArrow) || joystick.x<-0.5;
     
-    up=inputAxis[1]>0.5 || Input.GetKey(KeyCode.UpArrow);
-    down=inputAxis[1]<-0.5 || Input.GetKey(KeyCode.DownArrow);
+    up = inputAxis[1]>0.5 || Input.GetKey(KeyCode.UpArrow) || joystick.y>0.5;
+    down = inputAxis[1]<-0.5 || Input.GetKey(KeyCode.DownArrow) || joystick.y<-0.5;
     
     //set volume
     engineAudioSource.volume = Math.Abs(inputAxis[1]);

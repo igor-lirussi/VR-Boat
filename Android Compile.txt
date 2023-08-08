@@ -1,0 +1,4 @@
+- Boat mass from 34000 to 7000
+- Boat drag from 1.2 to 2
+- In ProjectSettings - XR Plug-In Management remove "Oculus" from Android tab
+- Pass the Android Version from 10 to 9
