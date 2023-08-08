@@ -18304,31 +18304,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 488286, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9999977
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 488286, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0013930252
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 488286, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0014640803
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 488286, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00075182813
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 488286, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 488286, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.168
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 488286, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.086
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2384296, guid: af2652a630f9e464895d954b8ce854bd, type: 3}
       propertyPath: m_Enabled
@@ -25641,18 +25641,18 @@ MonoBehaviour:
   visitedAreaUrban: 0
   debugText: {fileID: 782628376}
   seaLevelRisingMeters: 10
-  tempBreakScene: 1
+  tempBreakScene: 0
   playAudio: 1
   playerAudioSource: {fileID: 1990585606}
-  initialClip: {fileID: 8300000, guid: 398d1e0a5203eb34f953b061c0188632, type: 3}
-  enterPolarbearArea: {fileID: 8300000, guid: ec084706d7861ad47a621175eaa95a52, type: 3}
-  exitPolarbearArea: {fileID: 8300000, guid: 7dac1cf6094059742b53361a13505fba, type: 3}
-  enterNatureArea: {fileID: 8300000, guid: fd019d88c0bc23f4687e05a9dcaf3e96, type: 3}
-  exitNatureArea: {fileID: 8300000, guid: 71ed63f0c637594419770a98e261d2b2, type: 3}
-  enterUrbanArea: {fileID: 8300000, guid: c2a1a6cd5f22341488b9464c1c446f3e, type: 3}
-  exitUrbanArea: {fileID: 8300000, guid: 973a8c7a5e87512488ff3bf43c42b731, type: 3}
-  seaRiseClip: {fileID: 8300000, guid: 7a8a60d7a716f8f438e2a427b5cdaafc, type: 3}
-  finishClip: {fileID: 8300000, guid: 6d926dbe455470e49aae88d93597d5a0, type: 3}
+  initialClip: {fileID: 8300000, guid: e7d6e0d976b56304393f184bc305171c, type: 3}
+  enterPolarbearArea: {fileID: 8300000, guid: f14d85cdcb3950048a9438a98c3453af, type: 3}
+  exitPolarbearArea: {fileID: 8300000, guid: e98f6adf3fb3e7c44a0470197a71b764, type: 3}
+  enterNatureArea: {fileID: 8300000, guid: dd62c453bd94c46409660a677831819a, type: 3}
+  exitNatureArea: {fileID: 8300000, guid: 430d1b01c313594448c370baa25b0318, type: 3}
+  enterUrbanArea: {fileID: 8300000, guid: 2ddfc2f98be226742bc76668ede0f0f0, type: 3}
+  exitUrbanArea: {fileID: 8300000, guid: c5585f3249fa954478b76a36e4595af6, type: 3}
+  seaRiseClip: {fileID: 8300000, guid: 7e252096b2a37734c80db5e467d614c9, type: 3}
+  finishClip: {fileID: 8300000, guid: e6cb234500a72174f9721237c2a013bc, type: 3}
 --- !u!135 &135051010945742401
 SphereCollider:
   m_ObjectHideFlags: 0
