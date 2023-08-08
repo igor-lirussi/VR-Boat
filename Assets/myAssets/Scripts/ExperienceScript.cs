@@ -57,7 +57,7 @@ public class ExperienceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //debugText.text = string.Format("Artic: {0}\nNature: {1}\nUrban: {1}", visitedAreaPolarbear?"X":" ", visitedAreaNature?"X":" ", visitedAreaUrban?"X":" ");
+        debugText.text = string.Format("Artic: {0}\nNature: {1}\nUrban: {2}", visitedAreaPolarbear?"X":" ", visitedAreaNature?"X":" ", visitedAreaUrban?"X":" ");
         if (visitedAreaPolarbear && visitedAreaNature && visitedAreaUrban)
         {
             //set all areas to false to avoid reenter in this if in the next update
@@ -69,13 +69,13 @@ public class ExperienceScript : MonoBehaviour
             {
                 if (tempBreakScene)
                 {
-                    Invoke("loadTempBreakScene", 120.0f);
+                    Invoke("loadTempBreakScene", 30.0f);
                 } else {
-                    Invoke("riseSea", 120.0f);
+                    Invoke("riseSea", 30.0f);
                 }
             } else
             {
-                Invoke("endExperience", 90.0f);
+                Invoke("endExperience", 30.0f);
             }
         }
     }
