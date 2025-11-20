@@ -17,6 +17,8 @@ Built during VR Hackathon Climate Change 20-21/08/2022.
 - Climate Change
 
 ## Result
+[![Video](img/thumb3_yt.jpg)](https://www.youtube.com/watch?v=43jWKaCRu4Q)
+
 ![Result](./img/result.jpg)
 
 ## Requirements & Dependencies
